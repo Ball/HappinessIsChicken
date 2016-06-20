@@ -13,5 +13,8 @@
    <Group
       location = "container:ResourceOriginals"
       name = "ResourceOriginals">
+      <FileRef
+         location = "group:MrsChicken.sketch">
+      </FileRef>
    </Group>
 </Workspace>

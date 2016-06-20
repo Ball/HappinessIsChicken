@@ -13,7 +13,7 @@ This is an excuse to explore simple game making technologies for macOS, iOS, and
 
 ## macOS TODO
 
-[ ] Mrs. Chicken walks to where you click
+[*] Mrs. Chicken walks to where you click
 [ ] Once she stops moving, she lays an egg
 [ ] Once 10 eggs have ben layed, hatching season starts
 [ ] Eggs hatch durring hatching season and have a 3 second timer

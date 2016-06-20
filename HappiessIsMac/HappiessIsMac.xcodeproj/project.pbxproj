@@ -14,6 +14,8 @@
 		D39DC8471D1817DC007417CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8451D1817DC007417CD /* MainMenu.xib */; };
 		D39DC8521D1817DC007417CD /* HappiessIsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */; };
 		D39DC85D1D1817DC007417CD /* HappiessIsMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */; };
+		D39DC86B1D18445D007417CD /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC86A1D18445D007417CD /* GameData.swift */; };
+		D39DC86F1D186ADE007417CD /* MyActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D39DC86E1D186ADE007417CD /* MyActions.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappiessIsMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiessIsMacUITests.swift; sourceTree = "<group>"; };
 		D39DC85E1D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39DC86A1D18445D007417CD /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		D39DC86E1D186ADE007417CD /* MyActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyActions.sks; path = ../MyActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		D39DC83C1D1817DB007417CD /* HappiessIsMac */ = {
 			isa = PBXGroup;
 			children = (
+				D39DC86E1D186ADE007417CD /* MyActions.sks */,
 				D39DC83D1D1817DC007417CD /* AppDelegate.swift */,
 				D39DC83F1D1817DC007417CD /* GameScene.swift */,
 				D39DC8411D1817DC007417CD /* GameScene.sks */,
 				D39DC8431D1817DC007417CD /* Assets.xcassets */,
 				D39DC8451D1817DC007417CD /* MainMenu.xib */,
 				D39DC8481D1817DC007417CD /* Info.plist */,
+				D39DC86A1D18445D007417CD /* GameData.swift */,
 			);
 			path = HappiessIsMac;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				D39DC8441D1817DC007417CD /* Assets.xcassets in Resources */,
 				D39DC8421D1817DC007417CD /* GameScene.sks in Resources */,
 				D39DC8471D1817DC007417CD /* MainMenu.xib in Resources */,
+				D39DC86F1D186ADE007417CD /* MyActions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39DC8401D1817DC007417CD /* GameScene.swift in Sources */,
+				D39DC86B1D18445D007417CD /* GameData.swift in Sources */,
 				D39DC83E1D1817DC007417CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
