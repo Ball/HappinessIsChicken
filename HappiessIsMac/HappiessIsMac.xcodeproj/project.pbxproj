@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D39DC83E1D1817DC007417CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC83D1D1817DC007417CD /* AppDelegate.swift */; };
+		D39DC8401D1817DC007417CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC83F1D1817DC007417CD /* GameScene.swift */; };
+		D39DC8421D1817DC007417CD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8411D1817DC007417CD /* GameScene.sks */; };
+		D39DC8441D1817DC007417CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8431D1817DC007417CD /* Assets.xcassets */; };
+		D39DC8471D1817DC007417CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8451D1817DC007417CD /* MainMenu.xib */; };
+		D39DC8521D1817DC007417CD /* HappiessIsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */; };
+		D39DC85D1D1817DC007417CD /* HappiessIsMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D39DC84E1D1817DC007417CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39DC8321D1817DB007417CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D39DC8391D1817DB007417CD;
+			remoteInfo = HappiessIsMac;
+		};
+		D39DC8591D1817DC007417CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39DC8321D1817DB007417CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D39DC8391D1817DB007417CD;
+			remoteInfo = HappiessIsMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D39DC83A1D1817DB007417CD /* HappiessIsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappiessIsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39DC83D1D1817DC007417CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D39DC83F1D1817DC007417CD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D39DC8411D1817DC007417CD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D39DC8431D1817DC007417CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D39DC8461D1817DC007417CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D39DC8481D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappiessIsMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiessIsMacTests.swift; sourceTree = "<group>"; };
+		D39DC8531D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappiessIsMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiessIsMacUITests.swift; sourceTree = "<group>"; };
+		D39DC85E1D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D39DC8371D1817DB007417CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC84A1D1817DC007417CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC8551D1817DC007417CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D39DC8311D1817DB007417CD = {
+			isa = PBXGroup;
+			children = (
+				D39DC83C1D1817DB007417CD /* HappiessIsMac */,
+				D39DC8501D1817DC007417CD /* HappiessIsMacTests */,
+				D39DC85B1D1817DC007417CD /* HappiessIsMacUITests */,
+				D39DC83B1D1817DB007417CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D39DC83B1D1817DB007417CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D39DC83A1D1817DB007417CD /* HappiessIsMac.app */,
+				D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */,
+				D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D39DC83C1D1817DB007417CD /* HappiessIsMac */ = {
+			isa = PBXGroup;
+			children = (
+				D39DC83D1D1817DC007417CD /* AppDelegate.swift */,
+				D39DC83F1D1817DC007417CD /* GameScene.swift */,
+				D39DC8411D1817DC007417CD /* GameScene.sks */,
+				D39DC8431D1817DC007417CD /* Assets.xcassets */,
+				D39DC8451D1817DC007417CD /* MainMenu.xib */,
+				D39DC8481D1817DC007417CD /* Info.plist */,
+			);
+			path = HappiessIsMac;
+			sourceTree = "<group>";
+		};
+		D39DC8501D1817DC007417CD /* HappiessIsMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */,
+				D39DC8531D1817DC007417CD /* Info.plist */,
+			);
+			path = HappiessIsMacTests;
+			sourceTree = "<group>";
+		};
+		D39DC85B1D1817DC007417CD /* HappiessIsMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */,
+				D39DC85E1D1817DC007417CD /* Info.plist */,
+			);
+			path = HappiessIsMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D39DC8391D1817DB007417CD /* HappiessIsMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39DC8611D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMac" */;
+			buildPhases = (
+				D39DC8361D1817DB007417CD /* Sources */,
+				D39DC8371D1817DB007417CD /* Frameworks */,
+				D39DC8381D1817DB007417CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappiessIsMac;
+			productName = HappiessIsMac;
+			productReference = D39DC83A1D1817DB007417CD /* HappiessIsMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D39DC84C1D1817DC007417CD /* HappiessIsMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39DC8641D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacTests" */;
+			buildPhases = (
+				D39DC8491D1817DC007417CD /* Sources */,
+				D39DC84A1D1817DC007417CD /* Frameworks */,
+				D39DC84B1D1817DC007417CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39DC84F1D1817DC007417CD /* PBXTargetDependency */,
+			);
+			name = HappiessIsMacTests;
+			productName = HappiessIsMacTests;
+			productReference = D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D39DC8571D1817DC007417CD /* HappiessIsMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39DC8671D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacUITests" */;
+			buildPhases = (
+				D39DC8541D1817DC007417CD /* Sources */,
+				D39DC8551D1817DC007417CD /* Frameworks */,
+				D39DC8561D1817DC007417CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39DC85A1D1817DC007417CD /* PBXTargetDependency */,
+			);
+			name = HappiessIsMacUITests;
+			productName = HappiessIsMacUITests;
+			productReference = D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D39DC8321D1817DB007417CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Space-for-Rent";
+				TargetAttributes = {
+					D39DC8391D1817DB007417CD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D39DC84C1D1817DC007417CD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D39DC8391D1817DB007417CD;
+					};
+					D39DC8571D1817DC007417CD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D39DC8391D1817DB007417CD;
+					};
+				};
+			};
+			buildConfigurationList = D39DC8351D1817DB007417CD /* Build configuration list for PBXProject "HappiessIsMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D39DC8311D1817DB007417CD;
+			productRefGroup = D39DC83B1D1817DB007417CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D39DC8391D1817DB007417CD /* HappiessIsMac */,
+				D39DC84C1D1817DC007417CD /* HappiessIsMacTests */,
+				D39DC8571D1817DC007417CD /* HappiessIsMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D39DC8381D1817DB007417CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39DC8441D1817DC007417CD /* Assets.xcassets in Resources */,
+				D39DC8421D1817DC007417CD /* GameScene.sks in Resources */,
+				D39DC8471D1817DC007417CD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC84B1D1817DC007417CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC8561D1817DC007417CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D39DC8361D1817DB007417CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39DC8401D1817DC007417CD /* GameScene.swift in Sources */,
+				D39DC83E1D1817DC007417CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC8491D1817DC007417CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39DC8521D1817DC007417CD /* HappiessIsMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39DC8541D1817DC007417CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39DC85D1D1817DC007417CD /* HappiessIsMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D39DC84F1D1817DC007417CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D39DC8391D1817DB007417CD /* HappiessIsMac */;
+			targetProxy = D39DC84E1D1817DC007417CD /* PBXContainerItemProxy */;
+		};
+		D39DC85A1D1817DC007417CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D39DC8391D1817DB007417CD /* HappiessIsMac */;
+			targetProxy = D39DC8591D1817DC007417CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D39DC8451D1817DC007417CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39DC8461D1817DC007417CD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D39DC85F1D1817DC007417CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D39DC8601D1817DC007417CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D39DC8621D1817DC007417CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HappiessIsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D39DC8631D1817DC007417CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HappiessIsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D39DC8651D1817DC007417CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HappiessIsMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappiessIsMac.app/Contents/MacOS/HappiessIsMac";
+			};
+			name = Debug;
+		};
+		D39DC8661D1817DC007417CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HappiessIsMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappiessIsMac.app/Contents/MacOS/HappiessIsMac";
+			};
+			name = Release;
+		};
+		D39DC8681D1817DC007417CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HappiessIsMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HappiessIsMac;
+			};
+			name = Debug;
+		};
+		D39DC8691D1817DC007417CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HappiessIsMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HappiessIsMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D39DC8351D1817DB007417CD /* Build configuration list for PBXProject "HappiessIsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39DC85F1D1817DC007417CD /* Debug */,
+				D39DC8601D1817DC007417CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39DC8611D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39DC8621D1817DC007417CD /* Debug */,
+				D39DC8631D1817DC007417CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D39DC8641D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39DC8651D1817DC007417CD /* Debug */,
+				D39DC8661D1817DC007417CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D39DC8671D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39DC8681D1817DC007417CD /* Debug */,
+				D39DC8691D1817DC007417CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D39DC8321D1817DB007417CD /* Project object */;
+}

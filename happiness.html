@@ -1,0 +1,174 @@
+<html>
+    <body style="margin:0">
+        <canvas id="game" width="600" height="400">
+        </canvas>
+    </body>
+    <script>
+        var game = {
+            chicken: {x: 300, y: 300, isFacingRight: true},
+            eggs: [],
+            chicks: [],
+            lastTap: null
+        }
+        var canvas = document.getElementById("game")
+        canvas.addEventListener('click', function(e) {
+            game.lastTap ={ x:  e.pageX - canvas.offsetLeft,
+                y: e.pageY - canvas.offsetTop}
+        })
+        function moveChicken(chicken) {
+            if ( game.lastTap == null) {
+                return
+            }
+            var isAtLastTapX = game.lastTap.x === chicken.x
+            var isAtLastTapY = game.lastTap.y === chicken.y
+            var isAtLastTap = isAtLastTapX && isAtLastTapY
+            var isAt1StepY = Math.abs(game.lastTap.y - chicken.y) <= 10
+            var isAt1StepX = Math.abs(game.lastTap.x - chicken.x) <= 10
+
+            if (isAtLastTap){
+                game.lastTap = null
+                game.eggs.push({
+                    x: chicken.x,
+                    y: chicken.y,
+                    isFacingRight: chicken.isFacingRight,
+                    hatchAt: Date.now() + 3000})
+            } else if (isAtLastTapX) {
+                if ( isAt1StepY ) {
+                    chicken.y = game.lastTap.y
+                } else {
+                    chicken.y += (game.lastTap.y >= chicken.y) ? 10 : -10
+                }
+            } else if (isAt1StepX) {
+                chicken.x = game.lastTap.x
+            } else {
+                var isMovingRight = game.lastTap.x <= chicken.x
+                chicken.isFacingRight = isMovingRight
+                    chicken.x += chicken.isFacingRight? -10 : 10
+            }
+        }
+        function drawEggs(eggs, context) {
+            for (var egg_index in eggs) {
+                drawEgg(eggs[egg_index],context)
+            }
+        }
+
+        function drawChicks(chicks, context) {
+            for(var chick_index in chicks) {
+                drawChick(chicks[chick_index], context)
+            }
+        }   
+
+        function drawBackground(canvas, context) {
+            if(document.width != canvas.width) {
+                canvas.width = document.width    
+            }
+            if(document.height != canvas.height) {
+                canvas.height = document.height
+            }
+            context.fillStyle = "cornflowerBlue"
+            context.fillRect(0,0, canvas.width, canvas.height)
+        }
+
+        function hatchEggs(game) {
+            if (game.hatchingSeason) {
+                var now = Date.now()
+                var toHatch = game.eggs.filter(function(egg) { return egg.hatchAt < now })
+                var toKeep = game.eggs.filter(function(egg) { return egg.hatchAt >= now})
+                var rightBound = document.width + 30
+                game.chicks = game.chicks
+                    .concat(toHatch)
+                    .filter(function(chick) { return chick.x > -30 && chick.x < rightBound })
+                game.eggs = toKeep
+                game.hatchingSeason = (game.eggs.length + game.chicks.length) > 0
+            } else {
+                game.hatchingSeason = game.eggs.length >= 10
+
+            }
+        }
+
+        function drawGame() {
+            moveChicken(game.chicken)
+            var canvas = document.getElementById("game")
+            var context = canvas.getContext('2d')
+            drawBackground(canvas, context)
+            drawEggs(game.eggs, context)
+            drawChicks(game.chicks, context)
+            hatchEggs(game)
+            drawChicken(game.chicken, context)
+            window.requestAnimationFrame(drawGame)
+        }
+        function drawEgg(egg, context) {
+
+            context.beginPath();
+            context.arc(egg.x, egg.y, 20, 0, 2 * Math.PI, false);
+            context.fillStyle = 'white';
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+        }
+        function drawChick(chick, context) {
+         
+            // body
+            context.beginPath();
+            context.arc(chick.x, chick.y, 20, 0, 2 * Math.PI, false);
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();   
+            // eye
+            context.beginPath();
+            var headOffset = chick.isFacingRight ? 7 : -7
+            context.arc(chick.x-headOffset, chick.y-20, 5, 0, 2 * Math.PI, false);
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+            chick.x += chick.isFacingRight ? -10 : 10
+        }
+        function drawChicken(chicken, context) {
+            // body
+            context.beginPath();
+            context.arc(chicken.x, chicken.y - 15, 20, 0, 2 * Math.PI, false);
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = 5;
+            context.strokeStyle = 'black';
+            context.stroke();
+            // head
+            context.beginPath();
+            var headOffset = chicken.isFacingRight ? 15 : -15
+            context.arc(chicken.x-headOffset, chicken.y-35, 15, 0, 2 * Math.PI, false);
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = 5;
+            context.strokeStyle = 'black';
+            context.stroke();
+            // eye
+            context.beginPath();
+            context.arc(chicken.x-headOffset, chicken.y-35, 3, 0, 2 * Math.PI, false);
+            context.fillStyle = 'white';
+            context.fill();
+            context.lineWidth = 3;
+            context.strokeStyle = 'black';
+            context.stroke();
+            
+            //beak
+            context.fillStyle = 'orange';
+            context.lineWidth = 5;
+            context.beginPath();
+            var beakBase = chicken.isFacingRight ? -30 : 30
+            var beakTip = chicken.isFacingRight ? -50 : 50
+            context.moveTo(chicken.x + beakBase, chicken.y-30);
+            context.lineTo(chicken.x + beakTip, chicken.y-35);
+            context.lineTo(chicken.x + beakBase, chicken.y-40);
+            context.closePath();
+            context.stroke()
+            context.fill();
+        }
+
+        drawGame()
+    </script>
+</html>
