@@ -4,6 +4,7 @@ class GameScene: SKScene {
     var game = Game()
     var mrsChicken : SKNode!
     var eggs:[String:SKNode] = [:]
+    var chicks:[String:SKNode] = [:]
     override func didMoveToView(view: SKView) {
         mrsChicken = self.childNodeWithName("mrsChicken")
     }
@@ -38,6 +39,28 @@ class GameScene: SKScene {
                 eggNode.position = egg.location
                 eggs[egg.id] = eggNode
                 self.addChild(eggNode)
+            }
+        }
+        for chick in game.chicks {
+            if let egg = eggs[chick.id] {
+                removeChildrenInArray([egg])
+                let chickNode = SKSpriteNode(imageNamed: "Chick")
+                chickNode.position = chick.location
+                chicks[chick.id] = chickNode
+                eggs.removeValueForKey(chick.id)
+                if chick.facing == .Right {
+                    chickNode.xScale = -1
+                } else {
+                    chickNode.xScale = 1
+                }
+                self.addChild(chickNode)
+            }
+            if let chickNode = chicks[chick.id] {
+                chickNode.position = chick.location
+                if chick.location.x < -15 || chick.location.x > frame.width + 15 {
+                    removeChildrenInArray([chicks[chick.id]!])
+                    chick.outOfBounds = true
+                }
             }
         }
     }

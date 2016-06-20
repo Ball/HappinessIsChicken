@@ -63,11 +63,18 @@ class Egg {
 }
 
 class Chick {
+    private let STEP_SIZE = CGFloat(15)
     var location:CGPoint
     var facing:Facing
+    var id:String
+    var outOfBounds:Bool = false
     init(egg:Egg){
         location = egg.location
         facing = egg.facing
+        id = egg.id
+    }
+    func update() {
+        location.x += facing == .Right ? STEP_SIZE : -STEP_SIZE
     }
 }
 
@@ -85,5 +92,16 @@ class Game {
         if chicken.isLaying {
             eggs.append(chicken.lay())
         }
+        if eggs.count == 10 {
+            chicks.appendContentsOf(eggs.map(Chick.init))
+            eggs.removeAll()
+        }
+        for chick in chicks {
+            chick.update()
+        }
+        (0..<(chicks.count))
+            .filter({i in chicks[i].outOfBounds})
+            .reverse()
+            .forEach({i in chicks.removeAtIndex(i)})
     }
 }
