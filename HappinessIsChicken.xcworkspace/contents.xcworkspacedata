@@ -14,6 +14,12 @@
       location = "container:ResourceOriginals"
       name = "ResourceOriginals">
       <FileRef
+         location = "group:Egg.pdf">
+      </FileRef>
+      <FileRef
+         location = "group:MrsChicken.pdf">
+      </FileRef>
+      <FileRef
          location = "group:MrsChicken.sketch">
       </FileRef>
    </Group>

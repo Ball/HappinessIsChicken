@@ -3,6 +3,7 @@ import SpriteKit
 class GameScene: SKScene {
     var game = Game()
     var mrsChicken : SKNode!
+    var eggs:[String:SKNode] = [:]
     override func didMoveToView(view: SKView) {
         mrsChicken = self.childNodeWithName("mrsChicken")
     }
@@ -31,5 +32,13 @@ class GameScene: SKScene {
             mrsChicken.removeActionForKey("walk")
         }
         
+        for egg in game.eggs {
+            if eggs[egg.id] == nil {
+                let eggNode = SKSpriteNode(imageNamed: "Egg")
+                eggNode.position = egg.location
+                eggs[egg.id] = eggNode
+                self.addChild(eggNode)
+            }
+        }
     }
 }

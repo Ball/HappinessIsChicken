@@ -15,14 +15,16 @@ class Chicken {
             isStanding = false
         }
     }
-    func lay(eggs eggs:[Egg]) {
-        var eggs = eggs
-        eggs.append(Egg(momma:self))
+    func lay() -> Egg{
         isLaying = false
+        return Egg(momma:self)
     }
     func update(currentTime:CFTimeInterval) {
         if isStanding { return }
-        if location == destination { isStanding = true; isLaying = true }
+        if location == destination {
+            isStanding = true
+            isLaying = true
+        }
         if distanceBetween(p1: location, andP2: destination) <= STEP_SIZE {
             location = destination
         } else {
@@ -50,13 +52,16 @@ class Egg {
     var facing:Facing
     var hatchAt: NSDate
     var hatched: Bool
+    var id: String
     init(momma: Chicken) {
         location = momma.location
         facing = momma.facing
         hatchAt = NSDate().dateByAddingTimeInterval(NSTimeInterval(3))
         hatched = false
+        id = NSUUID().UUIDString
     }
 }
+
 class Chick {
     var location:CGPoint
     var facing:Facing
@@ -78,7 +83,7 @@ class Game {
     func update(currentTime currentTime: CFTimeInterval) {
         chicken.update(currentTime)
         if chicken.isLaying {
-            chicken.lay(eggs: eggs)
+            eggs.append(chicken.lay())
         }
     }
 }
