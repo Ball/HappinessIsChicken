@@ -41,6 +41,7 @@ class GameScene: SKScene {
                 self.addChild(eggNode)
             }
         }
+        
         for chick in game.chicks {
             if let egg = eggs[chick.id] {
                 removeChildrenInArray([egg])

@@ -22,15 +22,19 @@ class HappiessIsMacTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+        let game = Game()
+        
+        game.chicken.destination = CGPoint(x: game.chicken.destination.x + 5, y: game.chicken.destination.y + 5)
+        game.update(currentTime: 5)
+        XCTAssertEqual(game.eggs.count, 0)
+        game.update(currentTime: 6)
+        XCTAssertEqual(game.eggs.count, 1)
+        XCTAssertEqual(game.eggs[0].hatchAt, 9)
+        XCTAssertEqual(game.eggsToHatch(atTime: 9).count, 1)
+        
+        game.update(currentTime: 9)
+        XCTAssertEqual(game.eggs.count, 0)
+        XCTAssertEqual(game.chicks.count, 1)
     }
     
 }

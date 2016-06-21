@@ -1,9 +1,15 @@
 import Foundation
 
+func distanceBetween(p1 p1: CGPoint, andP2 p2: CGPoint) -> CGFloat {
+    let dy = (p1.y - p2.y)
+    let dx = (p1.x - p2.x)
+    return hypot(dy, dx)
+}
 enum Facing {
     case Right
     case Left
 }
+
 class Chicken {
     private let STEP_SIZE = CGFloat(10.0)
     var location:CGPoint = CGPoint(x: 300, y: 300)
@@ -15,9 +21,9 @@ class Chicken {
             isStanding = false
         }
     }
-    func lay() -> Egg{
+    func lay(currentTime: CFTimeInterval) -> Egg{
         isLaying = false
-        return Egg(momma:self)
+        return Egg(momma:self, hatchingAt: currentTime + CFTimeInterval(3))
     }
     func update(currentTime:CFTimeInterval) {
         if isStanding { return }
@@ -41,22 +47,17 @@ class Chicken {
         }
     }
 }
-func distanceBetween(p1 p1: CGPoint, andP2 p2: CGPoint) -> CGFloat {
-    let dy = (p1.y - p2.y)
-    let dx = (p1.x - p2.x)
-    return hypot(dy, dx)
-}
 
 class Egg {
     var location:CGPoint
     var facing:Facing
-    var hatchAt: NSDate
+    var hatchAt: NSTimeInterval
     var hatched: Bool
     var id: String
-    init(momma: Chicken) {
+    init(momma: Chicken, hatchingAt: CFTimeInterval) {
         location = momma.location
         facing = momma.facing
-        hatchAt = NSDate().dateByAddingTimeInterval(NSTimeInterval(3))
+        hatchAt = hatchingAt
         hatched = false
         id = NSUUID().UUIDString
     }
@@ -74,7 +75,7 @@ class Chick {
         id = egg.id
     }
     func update() {
-        location.x += facing == .Right ? STEP_SIZE : -STEP_SIZE
+        location.x = location.x + (facing == .Right ? STEP_SIZE : -STEP_SIZE)
     }
 }
 
@@ -82,23 +83,44 @@ class Game {
     var chicken:Chicken
     var eggs:[Egg]
     var chicks:[Chick]
+    var hatchingSeason:Bool = false
     init(){
         chicken = Chicken()
         eggs = []
         chicks = []
     }
+    func eggsToHatch(atTime currentTime: CFTimeInterval) -> [Egg]{
+        return eggs.filter({e in e.hatchAt <= currentTime })
+    }
+    
     func update(currentTime currentTime: CFTimeInterval) {
         chicken.update(currentTime)
         if chicken.isLaying {
-            eggs.append(chicken.lay())
+            eggs.append(chicken.lay(currentTime))
         }
-        if eggs.count == 10 {
-            chicks.appendContentsOf(eggs.map(Chick.init))
-            eggs.removeAll()
+        
+        if eggs.count >= 10 && !hatchingSeason {
+            hatchingSeason = true
         }
+        if eggs.count == 0 && chicks.count == 0  && hatchingSeason {
+            hatchingSeason = false
+        }
+        
+        if hatchingSeason {
+            let hatchingEggs = eggs.filter({e in e.hatchAt <= currentTime})
+            if hatchingEggs.count > 0 {
+                let newChicks = hatchingEggs.map(Chick.init)
+                chicks.appendContentsOf(newChicks)
+                var hatchingIndexes = (0..<(eggs.count)).filter({i in eggs[i].hatchAt <= currentTime})
+                hatchingIndexes = hatchingIndexes.reverse()
+                hatchingIndexes.forEach({i in self.eggs.removeAtIndex(i)})
+            }
+        }
+        
         for chick in chicks {
             chick.update()
         }
+        
         (0..<(chicks.count))
             .filter({i in chicks[i].outOfBounds})
             .reverse()
