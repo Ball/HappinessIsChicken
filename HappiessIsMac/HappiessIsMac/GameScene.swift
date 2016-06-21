@@ -36,6 +36,7 @@ class GameScene: SKScene {
         for egg in game.eggs {
             if eggs[egg.id] == nil {
                 let eggNode = SKSpriteNode(imageNamed: "Egg")
+                eggNode.setScale(CGFloat(0.6))
                 eggNode.position = egg.location
                 eggs[egg.id] = eggNode
                 self.addChild(eggNode)
@@ -46,13 +47,14 @@ class GameScene: SKScene {
             if let egg = eggs[chick.id] {
                 removeChildrenInArray([egg])
                 let chickNode = SKSpriteNode(imageNamed: "Chick")
+                chickNode.setScale(CGFloat(0.6))
                 chickNode.position = chick.location
                 chicks[chick.id] = chickNode
                 eggs.removeValueForKey(chick.id)
                 if chick.facing == .Right {
-                    chickNode.xScale = -1
+                    chickNode.xScale = -0.6
                 } else {
-                    chickNode.xScale = 1
+                    chickNode.xScale = 0.6
                 }
                 self.addChild(chickNode)
             }

@@ -16,7 +16,7 @@ This is an excuse to explore simple game making technologies for macOS, iOS, and
 [*] Mrs. Chicken walks to where you click
 [*] Once she stops moving, she lays an egg
 [*] Once 10 eggs have ben layed, hatching season starts
-[ ] BUG: Eggs and Chicks are miss-scaled in relation to Mrs. Chicken
+[*] BUG: Eggs and Chicks are miss-scaled in relation to Mrs. Chicken
 [*] Chicks run off the screen
 [*] Eggs hatch durring hatching season and have a 3 second timer (since laid)
 [*] Hatching season ends when all eggs are hatched and all chicks are off the screen
