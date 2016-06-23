@@ -7,26 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D37BACFE1D1C094D003DDEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BACFD1D1C094D003DDEEC /* AppDelegate.swift */; };
+		D37BAD001D1C094D003DDEEC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D37BACFF1D1C094D003DDEEC /* GameScene.sks */; };
+		D37BAD021D1C094D003DDEEC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BAD011D1C094D003DDEEC /* GameScene.swift */; };
+		D37BAD041D1C094D003DDEEC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BAD031D1C094D003DDEEC /* GameViewController.swift */; };
+		D37BAD071D1C094D003DDEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37BAD051D1C094D003DDEEC /* Main.storyboard */; };
+		D37BAD091D1C094D003DDEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37BAD081D1C094D003DDEEC /* Assets.xcassets */; };
+		D37BAD0C1D1C094D003DDEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37BAD0A1D1C094D003DDEEC /* LaunchScreen.storyboard */; };
+		D37BAD171D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BAD161D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift */; };
 		D39DC83E1D1817DC007417CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC83D1D1817DC007417CD /* AppDelegate.swift */; };
 		D39DC8401D1817DC007417CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC83F1D1817DC007417CD /* GameScene.swift */; };
 		D39DC8421D1817DC007417CD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8411D1817DC007417CD /* GameScene.sks */; };
 		D39DC8441D1817DC007417CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8431D1817DC007417CD /* Assets.xcassets */; };
 		D39DC8471D1817DC007417CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8451D1817DC007417CD /* MainMenu.xib */; };
 		D39DC8521D1817DC007417CD /* HappiessIsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */; };
-		D39DC85D1D1817DC007417CD /* HappiessIsMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */; };
 		D39DC86B1D18445D007417CD /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC86A1D18445D007417CD /* GameData.swift */; };
 		D39DC86F1D186ADE007417CD /* MyActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D39DC86E1D186ADE007417CD /* MyActions.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D39DC84E1D1817DC007417CD /* PBXContainerItemProxy */ = {
+		D37BAD131D1C094D003DDEEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D39DC8321D1817DB007417CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D39DC8391D1817DB007417CD;
-			remoteInfo = HappiessIsMac;
+			remoteGlobalIDString = D37BACFA1D1C094D003DDEEC;
+			remoteInfo = "Happiness Is Chicken";
 		};
-		D39DC8591D1817DC007417CD /* PBXContainerItemProxy */ = {
+		D39DC84E1D1817DC007417CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D39DC8321D1817DB007417CD /* Project object */;
 			proxyType = 1;
@@ -36,6 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D37BACFB1D1C094D003DDEEC /* Happiness Is Chicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happiness Is Chicken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37BACFD1D1C094D003DDEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D37BACFF1D1C094D003DDEEC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D37BAD011D1C094D003DDEEC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D37BAD031D1C094D003DDEEC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D37BAD061D1C094D003DDEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D37BAD081D1C094D003DDEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D37BAD0B1D1C094D003DDEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D37BAD0D1D1C094D003DDEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37BAD121D1C094D003DDEEC /* Happiness Is ChickenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happiness Is ChickenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37BAD161D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happiness_Is_ChickenTests.swift; sourceTree = "<group>"; };
+		D37BAD181D1C094D003DDEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39DC83A1D1817DB007417CD /* HappiessIsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappiessIsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39DC83D1D1817DC007417CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39DC83F1D1817DC007417CD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -46,14 +65,25 @@
 		D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappiessIsMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39DC8511D1817DC007417CD /* HappiessIsMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiessIsMacTests.swift; sourceTree = "<group>"; };
 		D39DC8531D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappiessIsMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiessIsMacUITests.swift; sourceTree = "<group>"; };
-		D39DC85E1D1817DC007417CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39DC86A1D18445D007417CD /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		D39DC86E1D186ADE007417CD /* MyActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyActions.sks; path = ../MyActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D37BACF81D1C094D003DDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37BAD0F1D1C094D003DDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39DC8371D1817DB007417CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,22 +98,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D39DC8551D1817DC007417CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D37BACFC1D1C094D003DDEEC /* Happiness Is Chicken */ = {
+			isa = PBXGroup;
+			children = (
+				D37BACFD1D1C094D003DDEEC /* AppDelegate.swift */,
+				D37BACFF1D1C094D003DDEEC /* GameScene.sks */,
+				D37BAD011D1C094D003DDEEC /* GameScene.swift */,
+				D37BAD031D1C094D003DDEEC /* GameViewController.swift */,
+				D37BAD051D1C094D003DDEEC /* Main.storyboard */,
+				D37BAD081D1C094D003DDEEC /* Assets.xcassets */,
+				D37BAD0A1D1C094D003DDEEC /* LaunchScreen.storyboard */,
+				D37BAD0D1D1C094D003DDEEC /* Info.plist */,
+			);
+			path = "Happiness Is Chicken";
+			sourceTree = "<group>";
+		};
+		D37BAD151D1C094D003DDEEC /* Happiness Is ChickenTests */ = {
+			isa = PBXGroup;
+			children = (
+				D37BAD161D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift */,
+				D37BAD181D1C094D003DDEEC /* Info.plist */,
+			);
+			path = "Happiness Is ChickenTests";
+			sourceTree = "<group>";
+		};
 		D39DC8311D1817DB007417CD = {
 			isa = PBXGroup;
 			children = (
 				D39DC83C1D1817DB007417CD /* HappiessIsMac */,
 				D39DC8501D1817DC007417CD /* HappiessIsMacTests */,
-				D39DC85B1D1817DC007417CD /* HappiessIsMacUITests */,
+				D37BACFC1D1C094D003DDEEC /* Happiness Is Chicken */,
+				D37BAD151D1C094D003DDEEC /* Happiness Is ChickenTests */,
 				D39DC83B1D1817DB007417CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +141,8 @@
 			children = (
 				D39DC83A1D1817DB007417CD /* HappiessIsMac.app */,
 				D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */,
-				D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */,
+				D37BACFB1D1C094D003DDEEC /* Happiness Is Chicken.app */,
+				D37BAD121D1C094D003DDEEC /* Happiness Is ChickenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +150,14 @@
 		D39DC83C1D1817DB007417CD /* HappiessIsMac */ = {
 			isa = PBXGroup;
 			children = (
-				D39DC86E1D186ADE007417CD /* MyActions.sks */,
 				D39DC83D1D1817DC007417CD /* AppDelegate.swift */,
+				D39DC86A1D18445D007417CD /* GameData.swift */,
 				D39DC83F1D1817DC007417CD /* GameScene.swift */,
 				D39DC8411D1817DC007417CD /* GameScene.sks */,
+				D39DC86E1D186ADE007417CD /* MyActions.sks */,
 				D39DC8431D1817DC007417CD /* Assets.xcassets */,
 				D39DC8451D1817DC007417CD /* MainMenu.xib */,
 				D39DC8481D1817DC007417CD /* Info.plist */,
-				D39DC86A1D18445D007417CD /* GameData.swift */,
 			);
 			path = HappiessIsMac;
 			sourceTree = "<group>";
@@ -122,18 +171,44 @@
 			path = HappiessIsMacTests;
 			sourceTree = "<group>";
 		};
-		D39DC85B1D1817DC007417CD /* HappiessIsMacUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D39DC85C1D1817DC007417CD /* HappiessIsMacUITests.swift */,
-				D39DC85E1D1817DC007417CD /* Info.plist */,
-			);
-			path = HappiessIsMacUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D37BACFA1D1C094D003DDEEC /* Happiness Is Chicken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37BAD191D1C094E003DDEEC /* Build configuration list for PBXNativeTarget "Happiness Is Chicken" */;
+			buildPhases = (
+				D37BACF71D1C094D003DDEEC /* Sources */,
+				D37BACF81D1C094D003DDEEC /* Frameworks */,
+				D37BACF91D1C094D003DDEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happiness Is Chicken";
+			productName = "Happiness Is Chicken";
+			productReference = D37BACFB1D1C094D003DDEEC /* Happiness Is Chicken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D37BAD111D1C094D003DDEEC /* Happiness Is ChickenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37BAD1C1D1C094E003DDEEC /* Build configuration list for PBXNativeTarget "Happiness Is ChickenTests" */;
+			buildPhases = (
+				D37BAD0E1D1C094D003DDEEC /* Sources */,
+				D37BAD0F1D1C094D003DDEEC /* Frameworks */,
+				D37BAD101D1C094D003DDEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D37BAD141D1C094D003DDEEC /* PBXTargetDependency */,
+			);
+			name = "Happiness Is ChickenTests";
+			productName = "Happiness Is ChickenTests";
+			productReference = D37BAD121D1C094D003DDEEC /* Happiness Is ChickenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D39DC8391D1817DB007417CD /* HappiessIsMac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D39DC8611D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMac" */;
@@ -169,24 +244,6 @@
 			productReference = D39DC84D1D1817DC007417CD /* HappiessIsMacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D39DC8571D1817DC007417CD /* HappiessIsMacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D39DC8671D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacUITests" */;
-			buildPhases = (
-				D39DC8541D1817DC007417CD /* Sources */,
-				D39DC8551D1817DC007417CD /* Frameworks */,
-				D39DC8561D1817DC007417CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D39DC85A1D1817DC007417CD /* PBXTargetDependency */,
-			);
-			name = HappiessIsMacUITests;
-			productName = HappiessIsMacUITests;
-			productReference = D39DC8581D1817DC007417CD /* HappiessIsMacUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,14 +254,17 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Space-for-Rent";
 				TargetAttributes = {
+					D37BACFA1D1C094D003DDEEC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D37BAD111D1C094D003DDEEC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D37BACFA1D1C094D003DDEEC;
+					};
 					D39DC8391D1817DB007417CD = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					D39DC84C1D1817DC007417CD = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = D39DC8391D1817DB007417CD;
-					};
-					D39DC8571D1817DC007417CD = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = D39DC8391D1817DB007417CD;
 					};
@@ -225,12 +285,31 @@
 			targets = (
 				D39DC8391D1817DB007417CD /* HappiessIsMac */,
 				D39DC84C1D1817DC007417CD /* HappiessIsMacTests */,
-				D39DC8571D1817DC007417CD /* HappiessIsMacUITests */,
+				D37BACFA1D1C094D003DDEEC /* Happiness Is Chicken */,
+				D37BAD111D1C094D003DDEEC /* Happiness Is ChickenTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D37BACF91D1C094D003DDEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BAD001D1C094D003DDEEC /* GameScene.sks in Resources */,
+				D37BAD0C1D1C094D003DDEEC /* LaunchScreen.storyboard in Resources */,
+				D37BAD091D1C094D003DDEEC /* Assets.xcassets in Resources */,
+				D37BAD071D1C094D003DDEEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37BAD101D1C094D003DDEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39DC8381D1817DB007417CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,16 +328,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D39DC8561D1817DC007417CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D37BACF71D1C094D003DDEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BAD021D1C094D003DDEEC /* GameScene.swift in Sources */,
+				D37BAD041D1C094D003DDEEC /* GameViewController.swift in Sources */,
+				D37BACFE1D1C094D003DDEEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37BAD0E1D1C094D003DDEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BAD171D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39DC8361D1817DB007417CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,30 +367,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D39DC8541D1817DC007417CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D39DC85D1D1817DC007417CD /* HappiessIsMacUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D37BAD141D1C094D003DDEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D37BACFA1D1C094D003DDEEC /* Happiness Is Chicken */;
+			targetProxy = D37BAD131D1C094D003DDEEC /* PBXContainerItemProxy */;
+		};
 		D39DC84F1D1817DC007417CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D39DC8391D1817DB007417CD /* HappiessIsMac */;
 			targetProxy = D39DC84E1D1817DC007417CD /* PBXContainerItemProxy */;
 		};
-		D39DC85A1D1817DC007417CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D39DC8391D1817DB007417CD /* HappiessIsMac */;
-			targetProxy = D39DC8591D1817DC007417CD /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D37BAD051D1C094D003DDEEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BAD061D1C094D003DDEEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D37BAD0A1D1C094D003DDEEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BAD0B1D1C094D003DDEEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		D39DC8451D1817DC007417CD /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -312,6 +410,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D37BAD1A1D1C094E003DDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Happiness Is Chicken/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-Chicken";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D37BAD1B1D1C094E003DDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Happiness Is Chicken/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-Chicken";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D37BAD1D1D1C094E003DDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Happiness Is ChickenTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-ChickenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness Is Chicken.app/Happiness Is Chicken";
+			};
+			name = Debug;
+		};
+		D37BAD1E1D1C094E003DDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Happiness Is ChickenTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-ChickenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness Is Chicken.app/Happiness Is Chicken";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D39DC85F1D1817DC007417CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,34 +606,25 @@
 			};
 			name = Release;
 		};
-		D39DC8681D1817DC007417CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = HappiessIsMacUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = HappiessIsMac;
-			};
-			name = Debug;
-		};
-		D39DC8691D1817DC007417CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = HappiessIsMacUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = HappiessIsMac;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D37BAD191D1C094E003DDEEC /* Build configuration list for PBXNativeTarget "Happiness Is Chicken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37BAD1A1D1C094E003DDEEC /* Debug */,
+				D37BAD1B1D1C094E003DDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D37BAD1C1D1C094E003DDEEC /* Build configuration list for PBXNativeTarget "Happiness Is ChickenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37BAD1D1D1C094E003DDEEC /* Debug */,
+				D37BAD1E1D1C094E003DDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D39DC8351D1817DB007417CD /* Build configuration list for PBXProject "HappiessIsMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -489,6 +641,7 @@
 				D39DC8631D1817DC007417CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D39DC8641D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacTests" */ = {
 			isa = XCConfigurationList;
@@ -497,14 +650,7 @@
 				D39DC8661D1817DC007417CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D39DC8671D1817DC007417CD /* Build configuration list for PBXNativeTarget "HappiessIsMacUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D39DC8681D1817DC007417CD /* Debug */,
-				D39DC8691D1817DC007417CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

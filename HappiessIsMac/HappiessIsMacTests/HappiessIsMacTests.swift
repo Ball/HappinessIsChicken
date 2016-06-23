@@ -29,12 +29,17 @@ class HappiessIsMacTests: XCTestCase {
         XCTAssertEqual(game.eggs.count, 0)
         game.update(currentTime: 6)
         XCTAssertEqual(game.eggs.count, 1)
+        
+        game.hatchingSeason = true
         XCTAssertEqual(game.eggs[0].hatchAt, 9)
         XCTAssertEqual(game.eggsToHatch(atTime: 9).count, 1)
         
         game.update(currentTime: 9)
         XCTAssertEqual(game.eggs.count, 0)
         XCTAssertEqual(game.chicks.count, 1)
+        
+        game.chicks[0].outOfBounds = true
+        game.update(currentTime: 10)
+        XCTAssertEqual(game.chicks.count, 0)
     }
-    
 }
