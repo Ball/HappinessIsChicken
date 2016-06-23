@@ -7,7 +7,12 @@
 //
 
 import XCTest
-@testable import HappiessIsMac
+#if os(iOS)
+    @testable import Happiness_Is_Chicken
+#endif
+#if os(OSX)
+    @testable import HappiessIsMac
+#endif
 
 class HappiessIsMacTests: XCTestCase {
     

@@ -1,10 +1,3 @@
-//
-//  GameViewController.swift
-//  Happiness Is Chicken
-//
-//  Created by Brian Ball on 6/23/16.
-//  Copyright (c) 2016 Space-for-Rent. All rights reserved.
-//
 
 import UIKit
 import SpriteKit

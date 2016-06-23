@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 func distanceBetween(p1 p1: CGPoint, andP2 p2: CGPoint) -> CGFloat {
     let dy = (p1.y - p2.y)

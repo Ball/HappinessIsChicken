@@ -8,13 +8,21 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         mrsChicken = self.childNodeWithName("mrsChicken")
     }
-    
+    #if os(iOS)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first {
+            let location = touch.locationInNode(self)
+            game.chicken.destination = location
+        }
+    }
+    #endif
+    #if os(OSX)
     override func mouseDown(theEvent: NSEvent) {
         let location = theEvent.locationInNode(self)
         
         game.chicken.destination = location
     }
-    
+    #endif
     override func update(currentTime: CFTimeInterval) {
         game.update(currentTime:currentTime)
         mrsChicken.position = game.chicken.location
