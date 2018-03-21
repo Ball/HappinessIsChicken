@@ -13,6 +13,104 @@
    <Group
       location = "container:ResourceOriginals"
       name = "ResourceOriginals">
+      <Group
+         location = "container:"
+         name = "MacIcons">
+         <FileRef
+            location = "group:ResourceOriginals/icon_16x16.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_16x16@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_32x32.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_32x32@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_128x128.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_128x128@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_256x256.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_256x256@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_512x512.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/icon_512x512@2x.png">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "iosIcons">
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon29x29.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon29x29@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon29x29@2x~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon29x29~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon40x40.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon40x40@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon40x40@2x~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon40x40~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon50x50@2x~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon50x50~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon57x57.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon57x57@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon60x60.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon60x60@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon72x72@2x~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon72x72~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon76x76@2x~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon76x76~ipad.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon512x512.png">
+         </FileRef>
+         <FileRef
+            location = "group:ResourceOriginals/AppIcon512x512@2x.png">
+         </FileRef>
+      </Group>
       <FileRef
          location = "group:Chick.pdf">
       </FileRef>

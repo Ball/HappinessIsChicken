@@ -1,44 +1,58 @@
 import SpriteKit
+import AudioToolbox
 
 class GameScene: SKScene {
+    #if os(OSX)
+    var walkSound = NSSound(named:"Purr")
+    #endif
     var game = Game()
     var mrsChicken : SKNode!
     var eggs:[String:SKNode] = [:]
     var chicks:[String:SKNode] = [:]
-    override func didMoveToView(view: SKView) {
-        mrsChicken = self.childNodeWithName("mrsChicken")
+    override func didMove(to view: SKView) {
+        mrsChicken = self.childNode(withName: "mrsChicken")
+        #if os(OSX)
+        walkSound?.loops = true
+        #endif
     }
     #if os(iOS)
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let location = touch.locationInNode(self)
+            let location = touch.location(in: self)
             game.chicken.destination = location
         }
     }
     #endif
     #if os(OSX)
-    override func mouseDown(theEvent: NSEvent) {
-        let location = theEvent.locationInNode(self)
+    override func mouseDown(with theEvent: NSEvent) {
+        let location = theEvent.location(in: self)
         
         game.chicken.destination = location
     }
     #endif
-    override func update(currentTime: CFTimeInterval) {
-        game.update(currentTime:currentTime)
+    override func update(_ currentTime: TimeInterval) {
+        game.update(currentTime)
         mrsChicken.position = game.chicken.location
         
-        if game.chicken.facing == .Right {
+        if game.chicken.facing == .right {
             mrsChicken.xScale = -1
         } else {
             mrsChicken.xScale = 1
         }
         
-        if !game.chicken.isStanding && nil == mrsChicken.actionForKey("walk") {
-            let walk:SKAction = SKAction.repeatActionForever( SKAction(named: "chickenWalk")!)
-            mrsChicken.runAction(walk, withKey: "walk")
+        if !game.chicken.isStanding && nil == mrsChicken.action(forKey: "walk") {
+            let walk:SKAction = SKAction.repeatForever( SKAction(named: "chickenWalk")!)
+            mrsChicken.run(walk, withKey: "walk")
+            #if os(OSX)
+                walkSound?.play()
+            #endif
         }
-        else if game.chicken.isStanding && nil != mrsChicken.actionForKey("walk") {
-            mrsChicken.removeActionForKey("walk")
+        else if game.chicken.isStanding && nil != mrsChicken.action(forKey: "walk") {
+            mrsChicken.removeAction(forKey: "walk")
+            #if os(OSX)
+                walkSound?.stop()
+            #endif
+
         }
         
         for egg in game.eggs {
@@ -47,29 +61,38 @@ class GameScene: SKScene {
                 eggNode.setScale(CGFloat(0.6))
                 eggNode.position = egg.location
                 eggs[egg.id] = eggNode
+                #if os(OSX)
+                    NSSound(named: "Pop")?.play()
+                #endif
                 self.addChild(eggNode)
             }
         }
         
         for chick in game.chicks {
             if let egg = eggs[chick.id] {
-                removeChildrenInArray([egg])
+                removeChildren(in: [egg])
                 let chickNode = SKSpriteNode(imageNamed: "Chick")
                 chickNode.setScale(CGFloat(0.6))
                 chickNode.position = chick.location
                 chicks[chick.id] = chickNode
-                eggs.removeValueForKey(chick.id)
-                if chick.facing == .Right {
+                eggs.removeValue(forKey: chick.id)
+                if chick.facing == .right {
                     chickNode.xScale = -0.6
                 } else {
                     chickNode.xScale = 0.6
                 }
+                #if os(OSX)
+                    NSSound(named:"Tink")?.play()
+                #endif
+                #if os(iOS)
+                    AudioServicesPlaySystemSound(1057)
+                #endif
                 self.addChild(chickNode)
             }
             if let chickNode = chicks[chick.id] {
                 chickNode.position = chick.location
                 if chick.location.x < -15 || chick.location.x > frame.width + 15 {
-                    removeChildrenInArray([chicks[chick.id]!])
+                    removeChildren(in: [chicks[chick.id]!])
                     chick.outOfBounds = true
                 }
             }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34663DC1D1D7A210033A84D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8431D1817DC007417CD /* Assets.xcassets */; };
 		D37BAD171D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BAD161D1C094D003DDEEC /* Happiness_Is_ChickenTests.swift */; };
-		D37BAD1F1D1C0ADC003DDEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39DC8431D1817DC007417CD /* Assets.xcassets */; };
 		D37BAD201D1C0AE3003DDEEC /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC86A1D18445D007417CD /* GameData.swift */; };
 		D37BAD211D1C0AE7003DDEEC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DC83F1D1817DC007417CD /* GameScene.swift */; };
 		D37BAD221D1C0AEE003DDEEC /* MyActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D39DC86E1D186ADE007417CD /* MyActions.sks */; };
@@ -265,16 +265,21 @@
 				TargetAttributes = {
 					D37BACFA1D1C094D003DDEEC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZF9498JSZ2;
+						LastSwiftMigration = 0800;
 					};
 					D37BAD111D1C094D003DDEEC = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D37BACFA1D1C094D003DDEEC;
 					};
 					D39DC8391D1817DB007417CD = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					D39DC84C1D1817DC007417CD = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D39DC8391D1817DB007417CD;
 					};
 				};
@@ -308,8 +313,8 @@
 				D37BAD2E1D1C0D83003DDEEC /* Main.storyboard in Resources */,
 				D37BAD2D1D1C0D69003DDEEC /* LaunchScreen.storyboard in Resources */,
 				D37BAD231D1C0AF3003DDEEC /* GameScene.sks in Resources */,
-				D37BAD1F1D1C0ADC003DDEEC /* Assets.xcassets in Resources */,
 				D37BAD221D1C0AEE003DDEEC /* MyActions.sks in Resources */,
+				D34663DC1D1D7A210033A84D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,14 +430,17 @@
 		D37BAD1A1D1C094E003DDEEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HappinessIsChicken/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-Chicken";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -440,7 +448,8 @@
 		D37BAD1B1D1C094E003DDEEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Happiness Is Chicken/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -448,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-Chicken";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -465,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-ChickenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness Is Chicken.app/Happiness Is Chicken";
 			};
 			name = Debug;
@@ -480,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.Happiness-Is-ChickenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness Is Chicken.app/Happiness Is Chicken";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -574,8 +586,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HappiessIsMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -588,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -601,6 +616,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappiessIsMac.app/Contents/MacOS/HappiessIsMac";
 			};
 			name = Debug;
@@ -614,6 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Space-For-Rent.HappiessIsMacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappiessIsMac.app/Contents/MacOS/HappiessIsMac";
 			};
 			name = Release;
